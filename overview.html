@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Variants Overview - Psychologist Website</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Variants grid */
+        .variants-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        /* Variant card */
+        .variant-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #e9ecef;
+        }
+
+        .variant-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Variant heading */
+        .variant-heading {
+            margin-bottom: 1rem;
+        }
+
+        .variant-heading a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-size: 1.5rem;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .variant-heading a:hover {
+            color: #667eea;
+        }
+
+        /* Variant description */
+        .variant-description {
+            color: #6c757d;
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        /* Feature list */
+        .feature-list {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+
+        .feature-list li {
+            padding: 0.5rem 0;
+            color: #495057;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .feature-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        /* Target audience */
+        .target-audience {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            font-size: 0.9rem;
+            color: #495057;
+        }
+
+        .target-audience strong {
+            color: #2c3e50;
+        }
+
+        /* Features section */
+        .features-section {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .features-section h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 0;
+        }
+
+        .feature-item strong {
+            color: #2c3e50;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: #6c757d;
+            border-top: 1px solid #e9ecef;
+            margin-top: 2rem;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .header p {
+                font-size: 1rem;
+            }
+
+            .variants-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .variant-card {
+                padding: 1.5rem;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>Website Variants Overview</h1>
+            <p>Three distinct design variants of a psychologist website, each with its own unique visual style and user experience approach.</p>
+        </header>
+
+        <!-- Variants Grid -->
+        <main class="variants-grid">
+            <!-- Variant 1: Modern Minimalist -->
+            <article class="variant-card">
+                <div class="variant-heading">
+                    <h2><a href="variant1/index.html">Variant 1: Modern Minimalist</a></h2>
+                </div>
+                <div class="variant-description">
+                    <strong>Clean, professional design with monochromatic palette</strong>
+                </div>
+                <ul class="feature-list">
+                    <li>Clean lines and minimal distractions</li>
+                    <li>Blue-gray color scheme</li>
+                    <li>Inter font family</li>
+                    <li>Focus on content and readability</li>
+                    <li>Perfect for clients who prefer simplicity and professionalism</li>
+                </ul>
+                <div class="target-audience">
+                    <strong>Target Audience:</strong> Clients who prefer clean, professional, minimal design
+                </div>
+            </article>
+
+            <!-- Variant 2: Warm Professional -->
+            <article class="variant-card">
+                <div class="variant-heading">
+                    <h2><a href="variant2/index.html">Variant 2: Warm Professional</a></h2>
+                </div>
+                <div class="variant-description">
+                    <strong>Welcoming design with earth tones and serif typography</strong>
+                </div>
+                <ul class="feature-list">
+                    <li>Warm brown and orange color palette</li>
+                    <li>Crimson Text and Source Sans Pro fonts</li>
+                    <li>Emphasis on comfort and trust</li>
+                    <li>Personal, approachable aesthetic</li>
+                    <li>Ideal for clients seeking emotional connection</li>
+                </ul>
+                <div class="target-audience">
+                    <strong>Target Audience:</strong> Clients who want warm, approachable, personal design
+                </div>
+            </article>
+
+            <!-- Variant 3: Contemporary Bold -->
+            <article class="variant-card">
+                <div class="variant-heading">
+                    <h2><a href="variant3/index.html">Variant 3: Contemporary Bold</a></h2>
+                </div>
+                <div class="variant-description">
+                    <strong>Modern design with vibrant colors and dynamic effects</strong>
+                </div>
+                <ul class="feature-list">
+                    <li>Bold indigo, purple, and amber colors</li>
+                    <li>Poppins and Space Grotesk fonts</li>
+                    <li>Dynamic animations and interactions</li>
+                    <li>Tech-forward, energetic feel</li>
+                    <li>Perfect for clients who appreciate innovation</li>
+                </ul>
+                <div class="target-audience">
+                    <strong>Target Audience:</strong> Clients who appreciate modern, bold, dynamic design
+                </div>
+            </article>
+        </main>
+
+        <!-- Features Section -->
+        <section class="features-section">
+            <h2>🚀 Common Features</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <strong>Responsive Design:</strong> Optimized for desktop, tablet, and mobile
+                </div>
+                <div class="feature-item">
+                    <strong>Accessibility:</strong> WCAG compliant with keyboard navigation
+                </div>
+                <div class="feature-item">
+                    <strong>Performance:</strong> Fast loading and smooth animations
+                </div>
+                <div class="feature-item">
+                    <strong>SEO Optimized:</strong> Proper meta tags and semantic HTML
+                </div>
+                <div class="feature-item">
+                    <strong>Contact Forms:</strong> Functional contact forms with validation
+                </div>
+                <div class="feature-item">
+                    <strong>Modern JavaScript:</strong> Interactive features and smooth scrolling
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Choose your preferred variant and click the heading to view the website design.</p>
+        </footer>
+    </div>
+</body>
+</html>
