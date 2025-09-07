@@ -144,25 +144,46 @@
 
         .features-section h2 {
             color: #2c3e50;
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
             font-size: 1.5rem;
+            text-align: center;
         }
 
         .features-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .feature-card {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
 
         .feature-item {
             display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.5rem 0;
+            flex-direction: column;
+            gap: 0.75rem;
         }
 
         .feature-item strong {
             color: #2c3e50;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-item span {
+            color: #6c757d;
+            line-height: 1.5;
         }
 
         /* Footer */
@@ -199,6 +220,11 @@
 
             .features-grid {
                 grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .feature-card {
+                padding: 1.25rem;
             }
         }
     </style>
@@ -278,23 +304,41 @@
         <section class="features-section">
             <h2>🚀 Common Features</h2>
             <div class="features-grid">
-                <div class="feature-item">
-                    <strong>Responsive Design:</strong> Optimized for desktop, tablet, and mobile
+                <div class="feature-card">
+                    <div class="feature-item">
+                        <strong>Responsive Design</strong>
+                        <span>Optimized for desktop, tablet, and mobile</span>
+                    </div>
                 </div>
-                <div class="feature-item">
-                    <strong>Accessibility:</strong> WCAG compliant with keyboard navigation
+                <div class="feature-card">
+                    <div class="feature-item">
+                        <strong>Accessibility</strong>
+                        <span>WCAG compliant with keyboard navigation</span>
+                    </div>
                 </div>
-                <div class="feature-item">
-                    <strong>Performance:</strong> Fast loading and smooth animations
+                <div class="feature-card">
+                    <div class="feature-item">
+                        <strong>Performance</strong>
+                        <span>Fast loading and smooth animations</span>
+                    </div>
                 </div>
-                <div class="feature-item">
-                    <strong>SEO Optimized:</strong> Proper meta tags and semantic HTML
+                <div class="feature-card">
+                    <div class="feature-item">
+                        <strong>SEO Optimized</strong>
+                        <span>Proper meta tags and semantic HTML</span>
+                    </div>
                 </div>
-                <div class="feature-item">
-                    <strong>Contact Forms:</strong> Functional contact forms with validation
+                <div class="feature-card">
+                    <div class="feature-item">
+                        <strong>Contact Forms</strong>
+                        <span>Functional contact forms with validation</span>
+                    </div>
                 </div>
-                <div class="feature-item">
-                    <strong>Modern JavaScript:</strong> Interactive features and smooth scrolling
+                <div class="feature-card">
+                    <div class="feature-item">
+                        <strong>Modern JavaScript</strong>
+                        <span>Interactive features and smooth scrolling</span>
+                    </div>
                 </div>
             </div>
         </section>
